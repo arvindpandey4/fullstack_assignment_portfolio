@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvind Pandey - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: #1565c0;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #0d47a1;
+            border-radius: 5px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 150px 20px 50px;
+            background: linear-gradient(to bottom, #1976d2, #0d47a1);
+            color: white;
+            margin-top: 60px;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 5px solid #fff;
+        }
+
+        header h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+
+        /* Section Styles */
+        section {
+            margin: 60px auto;
+            padding: 20px;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #1976d2;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        section p {
+            line-height: 1.8;
+            text-align: justify;
+            margin: 10px 0;
+            color: #455a64;
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            background-color: #e3f2fd;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0d47a1;
+            color: white;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #1976d2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #0d47a1;
+        }
+
+        .back-to-top.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header {
+                padding: 100px 20px 50px;
+            }
+
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <img src="profile.jpg" alt="Arvind Pandey">
+        <h1>Arvind Pandey</h1>
+        <p>Junior at SRMIST | Cloud Computing Enthusiast </p>
+    </header>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Dedicated third-year undergrad at SRMIST Chennai, pursuing B.Tech in CSE w/s Cloud Computing. Strong
+passion for Al/ML combined with full-stack development experience. Won collegiate hackathons and
+actively engaged in student-led club projects.
+        </p>
+        <style>
+            #about {
+                background-color: #e3f2fd; 
+            }
+        </style>
+    </section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+    <p>
+        My technical skills span a diverse range of technologies and tools:
+    </p>
+    <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">C/C++</div>
+        <div class="skill">SQL</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">ReactJs</div>
+        <div class="skill">NodeJs</div>
+        <div class="skill">NextJs</div>
+        <div class="skill">ExpressJs</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Rest-API</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Matplotlib</div>
+        <div class="skill">Open-CV</div>
+        <div class="skill">Scikit-learn</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">AWS Cloud</div>
+        <div class="skill">Git</div>
+    </div>
+</section>
+
+<style>
+
+    #skills {
+        margin: 60px auto;
+        padding: 20px;
+        max-width: 1000px;
+        background-color: #e3f2fd; 
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #skills h2 {
+        text-align: center;
+        color: #1976d2;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    #skills p {
+        text-align: center;
+        color: #455a64;
+        margin-bottom: 20px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill {
+        background-color: #1565c0;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    .skill:hover {
+        background-color: #0d47a1;
+    }
+</style>
+
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-container">
+        <div class="experience-item">
+            <h3>Summer Research Intern</h3>
+            <h4>IIIT Guwahati</h4>
+            <span class="date">06/2024 - 07/2024</span>
+            <p>
+                Worked on a research paper titled <strong>"Function Scheduling with Data Security in Serverless Computing Systems"</strong> under the guidance of Dr. Shubha Brata Nath (PhD IIT KGP). The paper is submitted to IEEE ANTS 2024 and is currently under review. Additionally, worked on optimization algorithms to improve the deployment speed of services in serverless computing.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h3>Technical and Innovations Executive</h3>
+            <h4>Cherry+ Network (TechVerse)</h4>
+            <span class="date">12/2022 - Present</span>
+            <p>
+                Contributed to the development of the main, registration, and recruitment websites using Next.js, React.js, and Tailwind CSS, and managed their hosting. Played a key role in creating a sales dashboard website for a client. Organized events like App Archives (an app development workshop) and Cloud Theory (an AWS workshop), attracting over 3000 students from Chennai. Currently leading all operations as the head of TechVerse.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h3>R&D Member</h3>
+            <h4>IEEE SRM SB Under IEEE Madras Section</h4>
+            <span class="date">03/2023 - Present</span>
+            <p>
+                Contributed to a research abstract on cancer detection using DenseNet-121 and CNN. Involved in conceptualizing and implementing projects for various national-level hackathons. Active member of the research reading group.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h3>AI/ML Member</h3>
+            <h4>Coding Ninjas SRM</h4>
+            <span class="date">11/2022 - 08/2023</span>
+            <p>
+                Contributed to the development of an AI-based resume builder as an in-house project. Led technical events that engaged over 500 students.
+            </p>
+        </div>
+    </div>
+</section>
+
+<style>
+
+    #experience {
+        margin: 60px auto;
+        padding: 20px;
+        max-width: 1000px;
+        background-color: #e3f2fd; 
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #experience h2 {
+        text-align: center;
+        color: #0277bd;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+    }
+
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-item {
+        background-color: #ffffff; /* White background for each item */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-item h3 {
+        margin: 0;
+        color: #01579b; /* Darker blue for job title */
+    }
+
+    .experience-item h4 {
+        margin: 5px 0;
+        color: #0288d1; /* Medium blue for company name */
+        font-weight: normal;
+    }
+
+    .experience-item .date {
+        display: block;
+        margin-bottom: 10px;
+        color: #0288d1;
+        font-style: italic;
+    }
+
+    .experience-item p {
+        margin: 0;
+        color: #424242;
+    }
+</style>
+
+
+
+<section id="education" style="background-color: #e3f2fd;">
+    <h2>Education</h2>
+    <div class="education-container">
+        <div class="education-item">
+            <h3>BTech in Computer Science and Engineering</h3>
+            <h4>Specialization in Cloud Computing</h4>
+            <p><strong>SRM Institute of Science and Technology</strong></p>
+            <span class="date">06/2022 - 05/2026</span>
+            <p>CGPA: 8.91 (4th semester)</p>
+        </div>
+        <div class="education-item">
+            <h3>High School</h3>
+            <p><strong>Delhi Public School Bangalore East</strong></p>
+            <span class="date">06/2013 - 06/2022</span>
+            <p>Subjects: Physics, Chemistry, Mathematics, Computer Science (11th & 12th)</p>
+        </div>
+    </div>
+</section>
+
+<style>
+
+    #education {
+        margin: 60px auto;
+        padding: 20px;
+        max-width: 1000px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #education h2 {
+        text-align: center;
+        color: #0277bd;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+    }
+
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .education-item {
+        background-color: #ffffff; /* White background for each item */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-item h3 {
+        margin: 0;
+        color: #01579b;
+    }
+
+    .education-item h4 {
+        margin: 5px 0;
+        color: #0288d1;
+        font-weight: normal;
+    }
+
+    .education-item .date {
+        display: block;
+        margin-bottom: 10px;
+        color: #0288d1;
+        font-style: italic;
+    }
+
+    .education-item p {
+        margin: 0;
+        color: #424242;
+    }
+</style>
+
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are a few of the projects that showcase my skills and expertise:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>A sleek, professional portfolio website built with HTML, SCSS, and JavaScript.</td>
+                    <td><a href="https://arvindpandey4.github.io" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Calculator</td>
+                    <td>A simple yet powerful calculator application created with HTML, CSS, and JavaScript.</td>
+                    <td><a href="https://github.com/arvindpandey4/simple_calculator" target="_blank">View Project</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #projects{
+                background-color: #e3f2fd;
+            }
+        </style>
+    </section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <p>
+        I would love to connect with you! You can reach me through the following channels:
+    </p>
+    <p>
+        <i class="fas fa-envelope"></i> Email: <a href="mailto:ap6802@srmist.edu.in"> ap6802@srmist.edu.in</a>
+    </p>
+    <p>
+        <i class="fas fa-phone"></i> Phone: <a href="tel:+919380586797"> +91 9380586797</a>
+    </p>
+    <style>
+        #contact {
+            background-color: #e3f2fd; /* Background color for the section */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        #contact p {
+            font-size: 16px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+    
+        #contact i {
+            font-size: 18px;
+            margin-right: 10px;
+            color: #0277bd; /* Icon color matching your theme */
+        }
+    
+        #contact a {
+            color: #0288d1; /* Link color */
+            text-decoration: none;
+        }
+    
+        #contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Arvind Pandey. All rights reserved.</p>
+    </footer>
+
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
